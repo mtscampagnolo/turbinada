@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cervejaria Turbinada</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="imgs/LogoTurbinada.png" alt="Logo Turbinada" />
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="#cervejas" class="nav-link" rel="noopener noreferrer">CERVEJAS</a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link" rel="noopener noreferrer">A TURBINADA</a>
+          </li>
+          <li>
+            <a href="#contato" class="nav-link" rel="noopener noreferrer">CONTATO</a>
+          </li>
+          <li id="to-main">Ir para o conteúdo principal</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="cervejas">
+        <h2>Cervejas</h2>
+        <input type="checkbox" name="see-more" id="see-more">
+        <div class="display">
+          <div class="display-row">
+            <div class="display-limit">
+              <label for="apa">
+                <img src="imgs/Apa.png" alt="Turbinada Apa" class="beer-pic-dis" />
+                <p class="beer-name">AMERICAN PALE ALE</p>
+                <input type="checkbox" name="beer" id="apa" class="beer"/>
+                <div class="beer-card">
+                  <div class="info-box">
+                    <figure>
+                      <img src="imgs/Apa.png" class="beer-pic-card" alt="Turbinada Apa" />
+                    </figure>
+                    <div>
+                      <h3>Turbinada APA</h3>
+                      <ul class="info">
+                        <li>ABV - 6.2%</li>
+                        <li>IBU - 34</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="description limiter">
+                    A Turbinada APA é uma cerveja refrescante, de corpo leve, coloração dourada intensa e aromas que remetem ao abacaxi e maracujá. Apresenta cinco tipos de lúpulos marcadamente cítricos complementados por notas intensas de malte. Acompanhamentos: carnes assadas, atum, carpaccio, hambúrger, nachos e pizza calabresa.
+                  </p>
+                </div>
+              </label>
+              <label for="ipa">
+                <img src="imgs/IPA.png" alt="Turbinada Ipa" class="beer-pic-dis" />
+                <p class="beer-name">INDIA PALE ALE</p>
+                <input type="checkbox" name="beer" id="ipa" class="beer"/>
+                <div class="beer-card">
+                  <div class="info-box">
+                    <figure>
+                      <img src="imgs/IPA.png" class="beer-pic-card" alt="Turbinada Ipa" />
+                    </figure>
+                    <div>
+                      <h3>Turbinada IPA</h3>
+                      <ul class="info">
+                        <li>ABV - 6.8%</li>
+                        <li>IBU - 58</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="description limiter">
+                    Sabor forte, frutado e maior teor alcoólico. Sua coloração varia do âmbar-dourado ao cobre. O aroma do lúpulo é sentido imediatamente ao servir, que é sua característica principal.
+                  </p>
+                </div>
+              </label>
+              <label for="stout">
+                <img src="imgs/Stout.png" alt="Turbinada Stout" class="beer-pic-dis" />
+                <p class="beer-name">STOUT</p>
+                <input type="checkbox" name="beer" id="stout" class="beer"/>
+                <div class="beer-card">
+                  <div class="info-box">
+                    <figure>
+                      <img src="imgs/Stout.png" class="beer-pic-card" alt="Turbinada Stout" />
+                    </figure>
+                    <div>
+                      <h3>Turbinada STOUT</h3>
+                      <ul class="info">
+                        <li>ABV - 7.5%</li>
+                        <li>IBU - 47</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="description limiter">
+                    A Turbinada Stout é uma cerveja de amargor forte, coloração escura e espuma cremosa. Produzida com maltes torrados que remetem ao aroma e sabor de café, chocolate e cinco tipos de lúpulos.
+                  </p>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="display-row see-less">
+            <div class="display-limit">
+              <label for="blond">
+                <img src="imgs/Blond-Ale.png" alt="Turbinada Blond" class="beer-pic-dis" />
+                <p class="beer-name">BLOND ALE</p>
+                <input type="checkbox" name="beer" id="blond" class="beer"/>
+                <div class="beer-card">
+                  <div class="info-box">
+                    <figure>
+                      <img src="imgs/Blond-Ale.png" class="beer-pic-card" alt="Turbinada Blond" />
+                    </figure>
+                    <div>
+                      <h3>Turbinada BLOND ALE</h3>
+                      <ul class="info">
+                        <li>ABV - 5.5%</li>
+                        <li>IBU - 27</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="description limiter">
+                    A Turbinada Blond Ale é uma cerveja de alta fermentação, corpo médio-alto, carbonatação generosa, cor dourada, espuma cremosa e persistente. Possui aroma frutado e condimento com caráter de levedura, levemente adocicada no início, mas com amargor moderado e seco no final.
+                  </p>
+                </div>
+              </label>
+              <label for="barley">
+                <img src="imgs/Barley.png" alt="Turbinada Barley Wine" class="beer-pic-dis" />
+                <p class="beer-name">BARLEY WINE</p>
+                <input type="checkbox" name="beer" id="barley" class="beer"/>
+                <div class="beer-card">
+                  <div class="info-box">
+                    <figure>
+                      <img src="imgs/Barley.png" class="beer-pic-card" alt="Turbinada Barley Wine" />
+                    </figure>
+                    <div>
+                      <h3>Turbinada BARLEY WINE</h3>
+                      <ul class="info">
+                        <li>ABV - 9%</li>
+                        <li>IBU - 54</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="description limiter">
+                    CERVEJA BARLEYWINE – Carvalho e Palo Santo. 
+    Literalmente vinho de cevada, a Turbinada BarleyWine é uma cerveja do tipo Strong Ale, originado na Inglaterra. Esta cerveja normalmente atinge um teor alcoólico de 8 a 12% e é fabricada a partir de mosto de alta densidade. O uso da palavra wine se dá por conta de seu teor alcoólico, semelhante ao de um vinho, mas uma vez que é feita a partir de malte, em vez de frutas, ela é de fato uma cerveja. 
+                  </p>
+                </div>
+              </label>
+              <label for="weizen">
+                <img src="imgs/Weizen.png" alt="Turbinada Weizen" class="beer-pic-dis" />
+                <p class="beer-name">WEIZEN</p>
+                <input type="checkbox" name="beer" id="weizen" class="beer"/>
+                <div class="beer-card">
+                  <div class="info-box">
+                    <figure>
+                      <img src="imgs/Weizen.png" class="beer-pic-card" alt="Turbinada Weizen" />
+                    </figure>
+                    <div>
+                      <h3>Turbinada WEIZEN</h3>
+                      <ul class="info">
+                        <li>ABV - 5.4%</li>
+                        <li>IBU - 11</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <p class="description limiter">
+                    Cerveja de trigo, de alta fermentação, coloração amarelo claro, ligeiramente turva. Seu aroma e sabores são intensos, ressaltando banana e notas de cravo. Por não ser uma cerveja filtrada, pode haver sedimentos de leveduras nas garrafas , que devem ser gentilmente agitadas antes de servir. 
+                  </p>
+                </div>
+              </label>
+            </div>
+            
+          </div>
+          <label for="see-more" id="see-more-btn"></label>
+        </div>
+        <div class="beer-opt">
+          <div class="opt-box">
+            <p>FAÇA SEU PEDIDO</p>
+            <div class="opt flex-column">
+              <a href="https://wa.me/5541999750942" target="_blank" class="flex-column">
+                <img src="imgs/whatsapp-logo.png" alt="Whatsapp">
+                <p>(41) 99977-0942</p>
+              </a>
+            </div>
+            <div class="opt flex-column">
+              <img src="imgs/beer.png" alt="Garrafs brindando">
+              <p>GARRAFA OU BARRIL</p>
+            </div>
+            <div class="opt flex-column">
+              <a href="tel:04136053479" target="_blank" class="flex-column">
+                <img src="imgs/phone-call.png" alt="Telefone">
+                <p>(41) 3605-3479</p>
+              </a>
+            </div>
+            <p>CONSULTE-NOS SOBRE NOSSAS CERVEJAS SAZONAIS!</p>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h2>A Turbinada</h2>
+        <div class="carousel flex-column">
+          <div class="slides">
+            <img src="imgs/c1.jpg" alt="Foto da fabrica" class="carousel-img" id="img1">
+            <img src="imgs/c2.jpg" alt="Foto da fabrica" class="carousel-img" id="img2">
+            <img src="imgs/c3.jpg" alt="Foto da fabrica" class="carousel-img" id="img3">
+            <img src="imgs/c4.jpg" alt="Foto da fabrica" class="carousel-img" id="img4">
+            <img src="imgs/c5.jpg" alt="Foto da fabrica" class="carousel-img" id="img5">
+          </div>
+          <ul class="carousel-nav">
+            <li class="carousel-item"><a href="#img1"> </a></li>
+            <li class="carousel-item"><a href="#img2"> </a></li>
+            <li class="carousel-item"><a href="#img3"> </a></li>
+            <li class="carousel-item"><a href="#img4"> </a></li>
+            <li class="carousel-item"><a href="#img5"> </a></li>
+          </ul>
+        </div>
+        <div class="history limiter">
+          <p>
+            A Cervejaria Turbinada surgiu como quase todas as cervejarias artesanais, em 2010 um grupo de amigos se reunião para degustar e avaliar cervejas artesanais, nacionais e importadas, depois de um ano destes encontros, nasceu o interesse em produzir a própria cerveja.
+            Já em 2011 o Campagnolo entrou em contato com seu amigo Jacir Cavalheiro, mestre cervejeiro, que se prontificou a ensina-los a produzir cerveja. Em três domingos, três aulas, foi o ponto de partida para o início da Cervejaria Turbinada.
+            Em meados de 2013 começamos a comercializar as primeiras garrafas e a partir deste ponto a cervejaria só cresceu.
+          </p>
+          <p> 
+            Nos dias de hoje continuamos levando a sério o propósito de fazer cerveja como deve ser, com produtos de qualidade, artesanalmente e pensando sempre no consumidor.
+          </p>
+          <p>  
+            Cervejaria Turbinada, cervejas clássicas com atitude.
+          </p>
+        </div>
+        <div class="video-limiter">
+          <div class="video-container">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TrsTHED3dOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="contato">
+        <div class="contato-bx limiter">
+          <div class="flex-column contato-info">
+            <h2>Contato</h2>
+            <a href="tel:04136053479"><ion-icon name="call-outline"></ion-icon>(41) 3605-3479</a>
+            <a href="https://wa.me/5541999750942" target="_blank">
+              <ion-icon name="logo-whatsapp"></ion-icon>(41) 99977-0942
+            </a>
+            <a href="mailto:contato@cervejariaturbinada.com.br">
+              <ion-icon name="mail-outline"></ion-icon>contato@cervejariaturbinada.com.br
+            </a>
+            <a href="https://www.instagram.com/cervejariaturbinada/" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>@cervejariaturbinada
+            </a>
+          </div>
+          <div class="logo logo-ctt">
+            <img src="imgs/LogoTurbinada.png" alt="Logo Turbinada" />
+          </div>
+        </div>
+        <p>Rodovia da Uva, 693, Roça Grande – Colombo – PR</p>
+      </section>
+    </main>
+  </body>
+</html>
