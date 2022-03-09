@@ -211,8 +211,10 @@ header {
 .description {
   font-size: 1.5rem;
   text-align: justify;
-  margin: 1rem;
+  margin-top: auto;
+  padding: 1rem 0;
   line-height: 1.5;
+
 }
 
 .see-less,
