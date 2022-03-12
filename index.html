@@ -211,19 +211,26 @@
         <h2>A Turbinada</h2>
         <div class="carousel flex-column">
           <div class="slides">
-            <img src="imgs/c1.jpg" alt="Foto da fabrica" class="carousel-img" id="img1">
-            <img src="imgs/c2.jpg" alt="Foto da fabrica" class="carousel-img" id="img2">
-            <img src="imgs/c3.jpg" alt="Foto da fabrica" class="carousel-img" id="img3">
-            <img src="imgs/c4.jpg" alt="Foto da fabrica" class="carousel-img" id="img4">
-            <img src="imgs/c5.jpg" alt="Foto da fabrica" class="carousel-img" id="img5">
+            <div>
+              <input type="radio" class="carousel-mover" name="carousel-mover" id="img1" checked="checked">
+              <img src="imgs/c1.jpg" alt="Foto da fabrica" class="carousel-img">
+              <input type="radio" class="carousel-mover" name="carousel-mover" id="img2">
+              <img src="imgs/c2.jpg" alt="Foto da fabrica" class="carousel-img">
+              <input type="radio" class="carousel-mover" name="carousel-mover" id="img3">
+              <img src="imgs/c3.jpg" alt="Foto da fabrica" class="carousel-img">
+              <input type="radio" class="carousel-mover" name="carousel-mover" id="img4">
+              <img src="imgs/c4.jpg" alt="Foto da fabrica" class="carousel-img">
+              <input type="radio" class="carousel-mover" name="carousel-mover" id="img5">
+              <img src="imgs/c5.jpg" alt="Foto da fabrica" class="carousel-img">
+            </div>
           </div>
-          <ul class="carousel-nav">
-            <li class="carousel-item"><a href="#img1"> </a></li>
-            <li class="carousel-item"><a href="#img2"> </a></li>
-            <li class="carousel-item"><a href="#img3"> </a></li>
-            <li class="carousel-item"><a href="#img4"> </a></li>
-            <li class="carousel-item"><a href="#img5"> </a></li>
-          </ul>
+          <div class="carousel-nav">
+            <label for="img1" id="label1"></label>
+            <label for="img2" id="label2"></label>
+            <label for="img3" id="label3"></label>
+            <label for="img4" id="label4"></label>
+            <label for="img5" id="label5"></label>
+          </div>
         </div>
         <div class="history limiter">
           <p>
