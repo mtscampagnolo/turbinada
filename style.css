@@ -16,6 +16,7 @@ html {
   color: var(--txt-clr);
   background-color: var(--txt-clr-alt);
   scroll-behavior: smooth;
+  scroll-padding-top: 156px;
 }
 
 a {
@@ -31,6 +32,7 @@ main {
   background-image: url("imgs/Banner-main.jpeg");
   background-position: top center;
   background-attachment: fixed;
+  padding-top: 156px;
 }
 
 h2 {
@@ -64,25 +66,53 @@ input[type=checkbox] {
   margin: 0 auto;
 }
 
+.toggle-padding {
+  padding-top: 157px;
+}
+
+.scroll-offset {
+  scroll-padding-top: 46px;
+}
+
 /*HEADER*/
 header {
-  padding: 1rem 10%;
+  padding: 1rem 8%;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  background-color: var(--dark-bg-trp);
+  background-color: var(--txt-clr);
   font-weight: 700;
   color: var(--txt-clr-alt);
   flex-wrap: wrap;
+  width: 100%;
+  z-index: 999;
+  transition: 0.6s;
+  position: fixed;
+}
+
+.fixed {
+  position: fixed;
+  transition: 0.6s;
+}
+
+.fixed .main-nav ul {
+  align-self: center;
+}
+
+.fixed .logo,
+.fixed .logo img {
+  opacity: 0;
+  height: 0;
 }
 
 .logo,
 .logo img {
-  max-width: 200px;
+  max-width: 150px;
   min-width: 100px;
   width: 100%;
   height: auto;
   display: block;
+  transition: 0.6s;
 }
 
 .main-nav ul {
@@ -90,8 +120,7 @@ header {
   list-style: none;
   gap: 1rem;
   font-size: 1.5rem;
-  align-self: flex-end;
-  align-items:flex-end;
+  align-items: flex-end;
 }
 
 .nav-link {
@@ -274,14 +303,12 @@ header {
 
 .opt-box img {
   max-width: 200px;
-  z-index: 999;
 }
 
 .opt,
 .opt a,
 .opt a p {
   gap: 1rem;
-  z-index: 999;
 }
 
 /*ABOUT*/
@@ -335,6 +362,10 @@ header {
   border-radius: 50%;
   display: flex;
   cursor: pointer;
+}
+
+.carousel-nav label:first-of-type {
+  background-color: var(--link-hover);
 }
 
 .history {
@@ -404,15 +435,32 @@ ion-icon {
 .contato-info {
   gap: 0.5rem;
 }
+
+.logo-ctt,
+.logo-ctt img {
+  max-width: 200px !important;
+}
 /*MQs*/
 
-@media only screen and (max-width: 715px) {
+@media only screen and (max-width: 530px) {
   header {
     justify-content: center;
   }
 }
 
-@media only screen and (min-width: 545px) {
+@media only screen and (max-width: 505px) {
+  header {
+    position: relative;
+  }
+  main {
+    padding-top: 0;
+  }
+  html {
+    scroll-padding-top: 46px;
+  }
+}
+
+@media only screen and (min-width: 575px) {
   .contato-bx {
     justify-content: space-between;
     padding: 0 5%
@@ -423,9 +471,8 @@ ion-icon {
   .info {
     font-size: 2rem;
   }
-  .nav-link {
-    font-size: 1.75rem;
-    margin-left: 1.5rem;
+  .main-nav ul {
+    gap: 1.5rem;
   }
 }
 

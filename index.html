@@ -212,15 +212,15 @@
         <div class="carousel flex-column">
           <div class="slides">
             <div>
-              <input type="radio" class="carousel-mover" name="carousel-mover" id="img1" checked="checked">
+              <input type="radio" class="carousel-mover" name="carousel-mover" id="img1" checked="checked" onchange="checker()">
               <img src="imgs/c1.jpg" alt="Foto da fabrica" class="carousel-img">
-              <input type="radio" class="carousel-mover" name="carousel-mover" id="img2">
+              <input type="radio" class="carousel-mover" name="carousel-mover" id="img2" onchange="checker()">
               <img src="imgs/c2.jpg" alt="Foto da fabrica" class="carousel-img">
-              <input type="radio" class="carousel-mover" name="carousel-mover" id="img3">
+              <input type="radio" class="carousel-mover" name="carousel-mover" id="img3" onchange="checker()">
               <img src="imgs/c3.jpg" alt="Foto da fabrica" class="carousel-img">
-              <input type="radio" class="carousel-mover" name="carousel-mover" id="img4">
+              <input type="radio" class="carousel-mover" name="carousel-mover" id="img4" onchange="checker()">
               <img src="imgs/c4.jpg" alt="Foto da fabrica" class="carousel-img">
-              <input type="radio" class="carousel-mover" name="carousel-mover" id="img5">
+              <input type="radio" class="carousel-mover" name="carousel-mover" id="img5" onchange="checker()">
               <img src="imgs/c5.jpg" alt="Foto da fabrica" class="carousel-img">
             </div>
           </div>
@@ -275,3 +275,29 @@
     </main>
   </body>
 </html>
+<script type="text/javascript">
+  const main = document.querySelector("main");
+  const header = document.querySelector("header");
+  const html = document.querySelector("html");
+
+  function checker() {
+    const radios = document.getElementsByClassName("carousel-mover");
+    for (let radio of radios) {
+      let selector = "[for='" + radio.id + "']";
+      if ( radio.checked ){
+        document.querySelector(selector).style.backgroundColor = "var(--link-hover)";
+      } else {
+        document.querySelector(selector).style.backgroundColor = "var(--txt-clr)";
+      }
+    };
+  };
+
+  window.addEventListener("scroll", function(){
+    if(header.offsetWidth <= 505) {
+      header.classList.toggle("fixed", window.scrollY > 109);
+      main.classList.toggle("toggle-padding", window.scrollY > 109);
+      html.classList.toggle("scroll-offset", window.scrollY > 109);
+    }
+  })
+  console.log(header.offsetWidth);
+</script>
